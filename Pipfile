@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+django = "==2.2.2"
+djangorestframework = "==3.10"
+python-dotenv = "*"
+djangorestframework-simplejwt = "*"
+psycopg2-binary = "*"
+pillow = "*"
+
+[requires]
+python_version = "3.7"
