@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "08deb3b293543c17c3ff3b44a16051bf5cf3d8840d4ca7ff3579d2e8af73cc3e"
+            "sha256": "8c91eedb9de8d6eebf8ac27f5aa6da0c237b530118b6c39abc65b8f3024bfda1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -23,6 +23,13 @@
             ],
             "index": "pypi",
             "version": "==2.2.2"
+        },
+        "django-rest-passwordreset": {
+            "hashes": [
+                "sha256:abd27349cd5702d3704f87412a2cd51630b5da95a3ffde01f123e586d7d46b5a"
+            ],
+            "index": "pypi",
+            "version": "==1.0.0"
         },
         "djangorestframework": {
             "hashes": [

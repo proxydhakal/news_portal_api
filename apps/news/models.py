@@ -20,8 +20,8 @@ class News(models.Model):
 
 
 class Feedback(models.Model):
-    commentator=models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.SET_NULL, null=True)
-    news = models.ForeignKey(News, on_delete=models.CASCADE)
-    comment =models.TextField()
+    commentator=models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.SET_NULL, null=True,related_name='commented_by')
+    news = models.ForeignKey(News, on_delete=models.CASCADE ,related_name='comments')
+    comment =models.TextField(null = True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)       

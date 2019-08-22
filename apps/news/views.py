@@ -62,5 +62,5 @@ class DeleteNewsAPIView(generics.DestroyAPIView):
 
 class CommentCreateAPIView(generics.CreateAPIView):
     authentication_classes =[authentication.JWTAuthentication,]
-    serializer_class = serializers.NewsSerializer
+    serializer_class = serializers.CommentSerializer
     
