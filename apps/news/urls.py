@@ -9,4 +9,6 @@ urlpatterns = [
     path('<int:pk>/update/',views.UpdateNewsAPIView.as_view()),
     path('<int:pk>/delete/',views.DeleteNewsAPIView.as_view()),
     path('<int:pk>/comment/',views.CommentCreateAPIView.as_view()),
+    path('<int:pk>/favourite/',views.FavoriteAPIView.as_view()),
+    path('<int:pk>/like/', views.NewsLikeAPIToggle.as_view(), name='like-api-toggle'),
 ]
