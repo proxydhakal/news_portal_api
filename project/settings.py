@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     #thirdparty
     'rest_framework',
+    'django_rest_passwordreset',
 
 
 ]
